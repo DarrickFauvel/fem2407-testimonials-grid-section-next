@@ -7,7 +7,7 @@ export default function Home() {
   const cardList = data.map((item) => <Card item={item} key={item.name} />)
 
   return (
-    <main className="flex flex-col min-h-screen bg-fem-white-smoke p-6">
+    <main className="flex flex-col md:justify-center min-h-screen bg-fem-white-smoke p-6">
       <HiddenH1>Testimonials grid section</HiddenH1>
       <ul className="card-list grid gap-6">{cardList}</ul>
     </main>

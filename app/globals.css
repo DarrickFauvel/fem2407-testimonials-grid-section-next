@@ -15,7 +15,24 @@
   display: none;
 }
 
+.card-list {
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e";
+
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas:
+      "a a b e"
+      "c d d e";
+  }
+}
+
 .card:nth-child(1) {
+  grid-area: a;
   background-color: var(--fem-blue-violet);
   color: white;
   z-index: 0;
@@ -34,21 +51,29 @@
 }
 
 .card:nth-child(2) {
+  grid-area: b;
   background-color: var(--fem-paynes-gray);
   color: white;
 }
 
-.card:nth-child(3),
-.card:nth-child(5) {
+.card:nth-child(3) {
+  grid-area: c;
   background-color: white;
   color: var(--fem-paynes-gray);
 }
 
 .card:nth-child(4) {
+  grid-area: d;
   background-color: var(--fem-raisin-black);
   color: white;
 
   .card-image {
     border: 2px solid var(--fem-tropical-indigo);
   }
+}
+
+.card:nth-child(5) {
+  grid-area: e;
+  background-color: white;
+  color: var(--fem-paynes-gray);
 }

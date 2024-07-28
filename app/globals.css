@@ -4,9 +4,12 @@
 
 :root {
   --fem-blue-violet: #733fc8;
+  --fem-tropical-indigo: #a775f1;
   --fem-paynes-gray: #48556a;
   --fem-timberwolf: #cfcfcf;
   --fem-battleship-gray: #979797;
+  --fem-raisin-black: #19202d;
+}
 }
 
 .card-list {

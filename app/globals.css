@@ -3,31 +3,36 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --fem-blue-violet: #733fc8;
+  --fem-paynes-gray: #48556a;
+  --fem-timberwolf: #cfcfcf;
+  --fem-battleship-gray: #979797;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.card-list {
+  .card:nth-child(1) {
+    background-color: var(--fem-blue-violet);
+    color: white;
+
+    .card-title {
+      opacity: 0.5;
+    }
+
+    .card-quote {
+      opacity: 0.7;
+    }
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .card:nth-child(2) {
+    background-color: var(--fem-battleship-gray);
+    color: white;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    .card-title {
+      opacity: 0.5;
+    }
+
+    .card-quote {
+      opacity: 0.7;
+    }
   }
 }

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="relative flex flex-col md:justify-center items-center min-h-screen bg-fem-white-smoke p-6">
       <HiddenH1>Testimonials grid section</HiddenH1>
-      <ul className="card-list grid gap-6">{cardList}</ul>
+      <ul className="card-list grid gap-6 max-w-[69.375rem]">{cardList}</ul>
       <Attribution />
     </main>
   )

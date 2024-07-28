@@ -17,7 +17,7 @@ const Card = ({ item }: CardProps) => {
     <li className="card relative flex flex-col gap-4 rounded-lg p-8 pt-6">
       <header className="flex items-center gap-4">
         <Image
-          className="card-image rounded-full w-[1.75rem]"
+          className="card-image rounded-full w-[30px]"
           src={`/images/${item.image}`}
           width={100}
           height={100}

@@ -33,7 +33,7 @@ const Card = ({ item }: CardProps) => {
         </div>
       </header>
 
-      <h2 className="card-head font-semibold text-fem-20px leading-6">
+      <h2 className="card-head font-semibold text-[20px] leading-6">
         {item.head}
       </h2>
 

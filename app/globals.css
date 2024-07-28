@@ -10,32 +10,45 @@
   --fem-battleship-gray: #979797;
   --fem-raisin-black: #19202d;
 }
+
+.card-quote-image {
+  display: none;
 }
 
-.card-list {
-  .card:nth-child(1) {
-    background-color: var(--fem-blue-violet);
-    color: white;
+.card:nth-child(1) {
+  background-color: var(--fem-blue-violet);
+  color: white;
+  z-index: 0;
 
-    .card-title {
-      opacity: 0.5;
-    }
-
-    .card-quote {
-      opacity: 0.7;
-    }
+  .card-quote-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    z-index: -1;
   }
 
-  .card:nth-child(2) {
-    background-color: var(--fem-battleship-gray);
-    color: white;
+  .card-image {
+    border: 2px solid var(--fem-tropical-indigo);
+  }
+}
 
-    .card-title {
-      opacity: 0.5;
-    }
+.card:nth-child(2) {
+  background-color: var(--fem-paynes-gray);
+  color: white;
+}
 
-    .card-quote {
-      opacity: 0.7;
-    }
+.card:nth-child(3),
+.card:nth-child(5) {
+  background-color: white;
+  color: var(--fem-paynes-gray);
+}
+
+.card:nth-child(4) {
+  background-color: var(--fem-raisin-black);
+  color: white;
+
+  .card-image {
+    border: 2px solid var(--fem-tropical-indigo);
   }
 }

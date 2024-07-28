@@ -1,5 +1,7 @@
 import Image from "next/image"
 
+import imageQuote from "@/assets/images/bg-pattern-quotation.svg"
+
 type CardProps = {
   item: {
     name: string
@@ -12,10 +14,10 @@ type CardProps = {
 
 const Card = ({ item }: CardProps) => {
   return (
-    <li className="card flex flex-col gap-4 rounded-lg p-8 pt-6">
+    <li className="card relative flex flex-col gap-4 rounded-lg p-8 pt-6">
       <header className="flex items-center gap-4">
         <Image
-          className="rounded-full w-[1.75rem] "
+          className="card-image rounded-full w-[1.75rem]"
           src={`/images/${item.image}`}
           width={100}
           height={100}
@@ -25,7 +27,7 @@ const Card = ({ item }: CardProps) => {
           <span className="card-name font-medium text-fem-13px">
             {item.name}
           </span>
-          <span className="card-title font-medium text-fem-11px">
+          <span className="card-title font-medium text-fem-11px opacity-50">
             {item.title}
           </span>
         </div>
@@ -35,7 +37,17 @@ const Card = ({ item }: CardProps) => {
         {item.head}
       </h2>
 
-      <p className="card-quote font-medium text-fem-13px">{item.quote}</p>
+      <p className="card-quote font-normal text-fem-13px opacity-70">
+        {item.quote}
+      </p>
+
+      <Image
+        className="card-quote-image"
+        src={imageQuote}
+        width={100}
+        height={100}
+        alt="quote image"
+      />
     </li>
   )
 }

@@ -23,11 +23,11 @@ const Card = ({ item }: CardProps) => {
           height={100}
           alt="avatar"
         />
-        <div className="flex flex-col gap-1">
-          <span className="card-name font-medium text-fem-13px leading-none">
+        <div className="flex flex-col gap-1 leading-none">
+          <span className="card-name font-medium text-fem-13px">
             {item.name}
           </span>
-          <span className="card-title font-medium text-fem-11px opacity-50 leading-none">
+          <span className="card-title font-medium text-fem-11px opacity-50">
             {item.title}
           </span>
         </div>

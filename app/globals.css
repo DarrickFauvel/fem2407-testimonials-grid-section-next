@@ -82,12 +82,14 @@
   grid-area: c;
   background-color: white;
   color: var(--fem-paynes-gray);
+  box-shadow: 40px 60px 50px -47px rgb(72 85 106 / 24.74%);
 }
 
 .card:nth-child(4) {
   grid-area: d;
   background-color: var(--fem-raisin-black);
   color: white;
+  box-shadow: 40px 60px 50px -47px rgb(72 85 106 / 24.74%);
 
   .card-image {
     border: 2px solid var(--fem-tropical-indigo);
@@ -98,4 +100,5 @@
   grid-area: e;
   background-color: white;
   color: var(--fem-paynes-gray);
+  box-shadow: 40px 60px 50px -47px rgb(72 85 106 / 24.74%);
 }

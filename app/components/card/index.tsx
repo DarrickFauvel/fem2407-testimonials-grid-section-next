@@ -14,7 +14,7 @@ type CardProps = {
 
 const Card = ({ item }: CardProps) => {
   return (
-    <li className="card relative flex flex-col gap-4 rounded-lg p-8 pt-6">
+    <li className="card relative flex flex-col gap-4 rounded-lg p-8 pt-6 overflow-hidden">
       <header className="flex items-center gap-4">
         <Image
           className="card-image rounded-full w-[30px]"
